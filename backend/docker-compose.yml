@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  postgres_dsvendas:
+    container_name: dsvendas
+    image: postgres:12.2
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
